@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:endColor="@color/power_saving_toolbar_bg_green"
+        android:startColor="@color/power_saving_toolbar_bg_green"
+        ></gradient>
+    <corners
+        android:radius="8dp"
+        ></corners>
+</shape>

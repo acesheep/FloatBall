@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="bgGreen">#2ebf00</color>
+    <color name="bgGray">#cbcbcb</color>
+    <color name="transparent">#0000</color>
+    <color name="transparentContent">#8000</color>
+    <color name="cache_clean_toolbar_bg_green">#0d9c1e</color>
+    <color name="cache_clean_header_bg_green">#178E17</color>
+    <color name="power_saving_toolbar_bg_green">#087dd8</color>
+    <color name="power_saving_header_bg_green">#0263AE</color>
+    <color name="rubbish_clean_toolbar_bg">#FF6347</color>
+    <color name="rubbish_clean_header_bg">#FF4500</color>
+
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+    <integer-array name="gplus_colors_powersaving">
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/power_saving_header_bg_green</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+    <integer-array name="gplus_colors_rubbish_clean">
+        <item>@color/rubbish_clean_toolbar_bg</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/rubbish_clean_toolbar_bg</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+</resources>

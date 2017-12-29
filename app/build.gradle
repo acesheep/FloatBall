@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.sheep.zk.floatball"
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    //注入
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    //日志
+    compile 'com.orhanobut:logger:2.1.1'
+    //webview
+    compile 'com.just.agentweb:agentweb:2.0.1'
+    //Get a list of running apps(5.0+)
+    compile 'com.jaredrummler:android-processes:1.1.1'
+    //循环圆环加载动画
+    compile 'com.github.castorflex.smoothprogressbar:library-circular:1.0.0'
+    //recycler list scroll view底部顶部滑动悬浮
+    compile 'com.github.lawloretienne:quickreturn:0.0.3'
+    //cardview
+    compile 'com.android.support:cardview-v7:25.3.1'
+    //recyclerView
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    //EasySwipeMenuLayout
+    compile 'com.github.anzaizai:EasySwipeMenuLayout:1.1.2'
+    //popupwindow
+    compile 'com.github.razerdp:BasePopup:1.8.8'
+
+}

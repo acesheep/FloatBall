@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#f6f6f6">
+
+    <ImageView
+        android:id="@+id/iv_item_levelone_icon"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_folder"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_rvrubbish_levelone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/iv_item_levelone_icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_rvrubbish_levelone_apk_mc"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="8"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            android:text="系统垃圾"
+            android:textColor="#555555"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_rvrubbish_levelone_apk_version"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="8"
+            android:maxLines="1"
+            android:paddingBottom="10dp"
+            android:text="[未安装]4.5.2"
+            android:textColor="#999999"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_rvrubbish_levelone_mc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/iv_item_levelone_icon"
+        android:ellipsize="end"
+        android:maxEms="8"
+        android:maxLines="1"
+        android:text="系统垃圾"
+        android:textColor="#555555"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/iv_rvrubbish_levelone_arrow"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_rvrubbish_levelone_mc"
+        android:src="@mipmap/icon_under_orange"/>
+
+
+
+        <ImageView
+            android:id="@+id/iv_rvrubbish_levelone_choose"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/selector_rvrubbish_item_choose"/>
+
+        <TextView
+            android:id="@+id/tv_rvrubbish_levelone_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@id/iv_rvrubbish_levelone_choose"
+            android:text="452.fKB"
+            android:textColor="#999999"
+            android:textSize="15sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:background="#777777"></RelativeLayout>
+</RelativeLayout>

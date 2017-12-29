@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:endColor="@color/rubbish_clean_toolbar_bg"
+        android:startColor="@color/rubbish_clean_toolbar_bg"
+        ></gradient>
+    <corners
+        android:radius="8dp"
+        ></corners>
+</shape>
